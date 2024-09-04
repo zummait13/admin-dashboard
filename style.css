@@ -2,8 +2,12 @@
     display: grid;
     width: 100vw;
     height: 100vh;
+
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: max-content 1fr;
 }
 
+/* BASE LAYOUT */
 .sidebar {
     grid-row: 1 / 3;
     background-color: lightblue;
@@ -17,4 +21,12 @@
 .content {
     background-color: lightgray;
     grid-row: 2 / 3;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;;
 }
