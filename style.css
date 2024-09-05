@@ -57,7 +57,6 @@
 .header {
     display: flex;
     flex-direction: column;
-    padding: 16px 32px;
 }
 
 /* SEARCH LINE */
@@ -66,6 +65,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    padding: 16px 32px;
 }
 
 .search {
@@ -84,4 +85,26 @@
 }
 
 /* PROFILE LINE */
+
+.profile-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 16px 32px;
+}
+
+.profile {
+    display: flex;
+    gap: 16px;
+}
+
+.profile image {
+    height: 100%;
+}
+
+.profile-line .buttons {
+    display: flex;
+    gap: 16px;
+}
 
