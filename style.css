@@ -108,3 +108,82 @@
     gap: 16px;
 }
 
+/* CONTENT AND FEED SECTION */
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr minmax(200px, 300px);
+
+    gap: 32px;
+    padding: 32px;
+
+    box-sizing: border-box;
+}
+
+.feed-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* PROJECTS SECTION */
+
+.projects-section {
+    display: grid;
+    grid-template-rows: max-content 1fr;
+}
+
+.project-card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+
+    padding: 16px;
+
+    background-color: var(--second-color);
+}
+
+.actions-line {
+    display: flex;
+    justify-content: end;
+    margin-top: auto;
+    gap: 16px;
+}
+
+/* ANNOUNCEMENT and TRENDING SECTION */
+
+.announcements-section,
+.trends-section {
+    display: grid;
+    grid-template-rows: max-content 1fr;
+}
+
+.announce-card,
+.trends-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px;
+
+    background-color: var(--second-color);
+}
+
+.headline .description{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-height: 4.5em;
+}
+
+.trend-headline {
+    display: flex;
+    align-items: center;
+}
+
+.trend-headline image {
+    max-width: 64px;
+}
